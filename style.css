@@ -29,11 +29,8 @@
   
 
   .badge{
-    /* display: flex; */
+    
     padding: 12px 24px;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* gap: 10px; */
     border-radius: 10px;
     background: #E6EEFF;
     width:fit-content;
@@ -61,6 +58,7 @@
 
   header{
     padding: 70px 100px;
+    
   }
 
   header h1 em{ 
@@ -108,6 +106,22 @@
     background: white;
     color: black;
     
+  }
+
+  .photo{
+    width:300px;
+    height: 300px;
+    
+    flex-shrink: 0;
+    border-radius: 500px;
+    border: 10px solid #BCF2F9;
+    background:  white 50% / cover no-repeat;
+    margin-left: 450px;
+  }
+
+  .introduction{
+    
+    display:flex;
   }
 
   
