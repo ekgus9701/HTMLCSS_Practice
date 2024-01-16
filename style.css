@@ -8,8 +8,16 @@
   
   body {
     /* font-family: "Cafe24Supermagic-Bold-v1.0"; */
+    background-color: black;
     
   }
+
+  .upper{
+    display: flex;
+    max-width: 1350px;
+    justify-content:space-between;
+  }
+
   
   nav {
     /* 레이아웃에 대한 스타일(5~10줄) */
@@ -18,22 +26,39 @@
     gap: 50px;
     height: 100px;
     /* background-color: #00000050; */
-    padding-left: 120px;
-    padding-right:120px;
+    padding-left: 120px; 
+    
     font-size: 20px;
+    color:white;
     
   }
   
   .navItem {
   }
   
+
+  .iconLinkContainer{
+    display:flex; 
+    
+    margin:30px;
+    flex-direction: row;
+    gap: 30px;
+    height: 100px;
+    
+  }
+
+.iconLink{
+    width:30px;
+    height:30px;
+
+  }
   
 
   .badge{
     
     padding: 12px 24px;
     border-radius: 10px;
-    background: #E6EEFF;
+    background: white;
     width:fit-content;
 
     /* 텍스트속성 */
@@ -48,9 +73,9 @@
   }
 
   header h1{
-    color: #333;
+    color: white;
     font-family: Pretendard;
-    font-size: 64px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: 125%; /* 80px */
@@ -58,7 +83,7 @@
   }
 
   header{
-    padding: 70px 100px;
+    padding: 70px 120px;
     
   }
 
@@ -69,45 +94,13 @@
     /* 백그라운드에 그라데이션을 적용한 후 잘라내는 느낌으로 그라데이션 구현 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-style: normal;
     
   }
   
-  .headerLinkContainer{
-    display:flex;
-    width:800px;
-    
-    gap:20px;
-    flex-direction: row;
-  }
+ 
 
-  .headerLink{
-    /* background-color: yellow; */
-    padding: 20px 80px;
-    display: block;
-    text-decoration: none;
-    font-family: Pretendard;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 36px */
-    border: medium solid black;
-    border-radius: 16px;
 
-  }
-
-  .black{
-
-    background: #000;
-    color: #E6EEFF;
-
-  }
-
-  .white{
-
-    background: white;
-    color: black;
-    
-  }
 
   .photo{
     width:300px;
@@ -115,16 +108,147 @@
     
     flex-shrink: 0;
     border-radius: 500px;
-    border: 10px solid #BCF2F9;
-    background:  white 50% / cover no-repeat;
-    margin-left: 450px;
+    border: 10px solid black;
+    
   }
 
   .introduction{
     
     display:flex;
+    justify-content: space-between;
+    max-width: 1250px;;
   }
 
+  .fadeIn{
+    animation: fadein 3s;
+  }
+
+  @keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+  .aboutMeContainer {
+    background: black;/*linear-gradient(
+      96deg,
+      white 1.72%,
+      rgb(34, 34, 34) 158.93%
+    );*/
+    
+  }
+  .aboutMe {
+    background: rgba(255, 255, 255);
+    border-radius: 30px;
+    
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 80px 60px;
+   
+    
+    
+  }
+  .aboutMe h2 {
+    color: #000;
+    font-size: 40px;
+    /* white-space: pre-line; */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 50px */
+    letter-spacing: -0.8px;
+  }
+  
+  .aboutMe p {
+    color: #333;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    white-space: pre-line;
+  }
+  
+  .flyingPerson {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    /* top: 0px; */
+    bottom: 48px;
+    /* right: 0px; */
+    left: 165px;
+  }
+  
+  .posRelative {
+    position: relative;
+  }
+  
+  .btn{
+    position:fixed;
+    width:80px;
+    padding: 10px;
+    right:30px;
+    bottom:30px;
+    border-radius: 10px;
+    
+    background: white;
+    text-align: center;
+    color: black;
+    font-size:20px;
+    font-style: normal;
+    
+    }
+
+    .btn a{
+        text-decoration-line: none;
+        color: black;
+    }
+
+    /* my tech stacks */
+
+    .techStacks{
+        padding: 70px 120px;
+    }
+    
+    .techStacks h1{
+        color: white;
+        font-family: Pretendard;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; /* 80px */
+        letter-spacing: -1.28px;
+        text-align: center;
+    }
+
+    .techStacks p{
+        color: white;
+        font-family: Pretendard;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 125%; /* 80px */
+        letter-spacing: -1.28px;
+        text-align: center;
+        padding: 15px;
+        padding-bottom: 50px;
+    }
+
+    .stackIcons{
+
+        display: flex;
+        justify-content:space-between;
+         
+       
+    }
+
+  .stackIcon{
+   
+        width: 150px;
+        height: 150px;      
+    }
   
 
     
