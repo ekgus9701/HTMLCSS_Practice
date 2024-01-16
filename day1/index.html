@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<!-- 모든 html 문서는 <!DOCTYPE>선언으로 시작해야 한다. -->
+<br lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML/CSS</title>
+</head>
+<br> 
+  <!--body는 문서의 본문을 정의-->
+  <h1>HTML 학습~</h1>
+
+  <!-- 인용문 -->
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+   </blockquote>
+
+  
+  <i> 웹은</i>
+  <em> 정말</em>
+  <b> 재미있고</b> 
+  <strong> 신난다</strong>
+
+   <h3>Q. &lt;b&gt; 와 &lt;strong&gt;, &lt;i&gt; 와 &lt;h3&gt; 차이는 뭘까? </h3>
+  
+
+  A. &lt;i&gt;는 단순히 텍스트를 이탤릭체로 표시한다.(웹은)<br>
+  A. &lt;h3&gt;는 의미론적으로 강조된 텍스트를 이탤릭체로 나타낸다.(정말)<br>
+  A. &lt;b&gt;는 단순히 텍스트를 굵게 표시하는 데 사용된다.(재미있고)<br>
+  A. &lt;strong&gt;은 의미론적으로 중요한 텍스트를 굵게 나타낸다.(신난다)<br>
+
+      <p>신한투자증권의 <span style="color:blue;font-weight:bold">파랑</span>!!</p>
+
+      <form action="/action_page.php">
+          <fieldset>
+            <legend>Personalia:</legend>
+            <!-- legend는 관련 요소를 그룹화함 -->
+            <label for="fname">First name:</label>
+            <!-- required-> 반드시 작성해야함 -->
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="email">Email:</label>
+            <!--정규표현식을 이메일 양식으로 설정-->
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required><br><br>
+            <!-- input type을 date로 해서 연도, 월, 일 클릭 가능 -->
+            <input type="submit" value="Submit">
+          </fieldset>
+      </form>
+
+      <h4>영상을 넣어보자!</h4>
+
+      <video width="320" height="240" controls>
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <details>
+          <summary>무슨 영상이냐면</summary>
+          <p>그냥 마우스를 움직이는 영상이다!</p>
+        </details>
+
+
+  
+</body>
+</html>
