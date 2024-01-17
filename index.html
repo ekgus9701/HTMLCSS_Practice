@@ -2,16 +2,29 @@
 <html lang="ko">
 
 <head>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ5L6LGV4Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LJ5L6LGV4Q');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DH's Portfolio</title>
     <link rel='stylesheet' href='./reset.css'>
     <link rel='stylesheet' href='./style.css'>
+    <link rel='stylesheet' href='./responsive.css' media="(max-width:768px)">
 </head>
+
+
 
 <body>
   <div class="upper">
-    <div>
+    <div class="navContainer">
       <nav>
          
           <div class="navItem">Home</div>
@@ -23,12 +36,12 @@
     </div>
     
       <div class="iconLinkContainer">
-        <a class="iconLink" href="https://github.com/ekgus9701" target="_blank">
+        <a class="iconLink" href="https://github.com/ekgus9701" onclick="onClickButton('Github')" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C6.7125 0 0 6.7125 0 15C0 21.6375 4.29375 27.2437 10.2563 29.2313C11.0063 29.3625 11.2875 28.9125 11.2875 28.5188C11.2875 28.1625 11.2688 26.9813 11.2688 25.725C7.5 26.4188 6.525 24.8062 6.225 23.9625C6.05625 23.5312 5.325 22.2 4.6875 21.8438C4.1625 21.5625 3.4125 20.8687 4.66875 20.85C5.85 20.8313 6.69375 21.9375 6.975 22.3875C8.325 24.6562 10.4812 24.0187 11.3438 23.625C11.475 22.65 11.8688 21.9937 12.3 21.6187C8.9625 21.2437 5.475 19.95 5.475 14.2125C5.475 12.5813 6.05625 11.2313 7.0125 10.1813C6.8625 9.80625 6.3375 8.26875 7.1625 6.20625C7.1625 6.20625 8.41875 5.8125 11.2875 7.74375C12.4875 7.40625 13.7625 7.2375 15.0375 7.2375C16.3125 7.2375 17.5875 7.40625 18.7875 7.74375C21.6562 5.79375 22.9125 6.20625 22.9125 6.20625C23.7375 8.26875 23.2125 9.80625 23.0625 10.1813C24.0188 11.2313 24.6 12.5625 24.6 14.2125C24.6 19.9688 21.0938 21.2437 17.7563 21.6187C18.3 22.0875 18.7688 22.9875 18.7688 24.3937C18.7688 26.4 18.75 28.0125 18.75 28.5188C18.75 28.9125 19.0312 29.3813 19.7812 29.2313C22.759 28.2259 25.3465 26.3121 27.1796 23.7592C29.0127 21.2063 29.9991 18.1429 30 15C30 6.7125 23.2875 0 15 0Z" fill="white"/>
           </svg>
         </a>
-        <a class="iconLink" href="https://www.linkedin.com/in/%EB%8B%A4%ED%98%84-%ED%95%9C-b7863b200/" target="_blank">
+        <a class="iconLink" href="https://www.linkedin.com/in/%EB%8B%A4%ED%98%84-%ED%95%9C-b7863b200/" onclick="onClickButton('LinkedIn')" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
           <g clip-path="url(#clip0_10_280)">
             <path d="M15 0.600098C7.04698 0.600098 0.599976 7.0471 0.599976 15.0001C0.599976 22.9531 7.04698 29.4001 15 29.4001C22.953 29.4001 29.4 22.9531 29.4 15.0001C29.4 7.0471 22.953 0.600098 15 0.600098ZM11.475 20.9686H8.55898V11.5846H11.475V20.9686ZM9.99898 10.4326C9.07798 10.4326 8.48248 9.7801 8.48248 8.9731C8.48248 8.1496 9.09598 7.5166 10.0365 7.5166C10.977 7.5166 11.553 8.1496 11.571 8.9731C11.571 9.7801 10.977 10.4326 9.99898 10.4326ZM22.125 20.9686H19.209V15.7681C19.209 14.5576 18.786 13.7356 17.7315 13.7356C16.926 13.7356 16.4475 14.2921 16.236 14.8276C16.158 15.0181 16.1385 15.2881 16.1385 15.5566V20.9671H13.221V14.5771C13.221 13.4056 13.1835 12.4261 13.1445 11.5831H15.678L15.8115 12.8866H15.87C16.254 12.2746 17.1945 11.3716 18.768 11.3716C20.6865 11.3716 22.125 12.6571 22.125 15.4201V20.9686Z" fill="white"/>
@@ -40,11 +53,12 @@
           </defs>
         </svg></a>
 
-        <a class="iconLink" href="https://velog.io/@kkily55/posts" target="_blank">
+        <a class="iconLink" href="https://velog.io/@kkily55/posts" onclick="onClickButton('Velog')" target="_blank">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 192 192" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
 	<path id="Website" fill="white" fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"/>
-	</svg></a>
+	        </svg>
+        </a>
       </div>
 
       
@@ -62,8 +76,8 @@
               <h1>
                 Hi 👋,<br/>
                 My name is<br/>
-                <em>Dahyeon Han </em><br/>
-                I build things for web<br/>
+                <em>Dahyeon Han</em><br/>
+                I build things for web
               
               </h1>
             </div>
@@ -97,7 +111,7 @@
 
   <section class="myTechStackContainter">
     <div class="techStacks">
-      <h1> My Tech Stack</h1>
+      <h1> Tech Stack</h1>
       <p>지금까지 활용해 본 기술들입니다. <br>
         넓고 깊은 기술 스택을 얻기 위해 노력하고 있습니다.</p>
       <div class="stackIcons">
@@ -156,9 +170,99 @@
     </div>
   </section>
 
-  <div class="btn">
+  <section class="myProjectsContainter">
+    <div class="projects">
+      <h1> Projects</h1>
+      <p>지금까지 경험한 프로젝트 목록입니다.</p>
+      <div class="projectList">
+       
+        <div><img class="project" src="./assets/images/a.jpeg">hiii</div>
+        <div><img class="project" src="./assets/images/b.jpeg">hiii</div>
+        <div><img class="project" src="./assets/images/c.jpeg">hiii</div>
+        <div><img class="project" src="./assets/images/d.jpeg">hiii</div>
+        <div><img class="project" src="./assets/images/e.jpeg">hiii</div>
+        <div><img class="project" src="./assets/images/f.jpeg">hiii</div>
+        
+        
+      </div>
+      
+
+   
+
+    </div>
+  </section>
+
+  <div class="lower">
+    <div>
+      <nav>
+         
+          <div class="navItem">Home</div>
+          <div class="navItem">About</div>
+          <div class="navItem">TechStack</div>
+          <div class="navItem">Project</div>
+          <div class="navItem">Contact</div>
+      </nav>
+    </div>
+    
+      <div class="iconLinkContainer">
+        <a class="iconLink" href="https://github.com/ekgus9701" onclick="onClickButton('Github')" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C6.7125 0 0 6.7125 0 15C0 21.6375 4.29375 27.2437 10.2563 29.2313C11.0063 29.3625 11.2875 28.9125 11.2875 28.5188C11.2875 28.1625 11.2688 26.9813 11.2688 25.725C7.5 26.4188 6.525 24.8062 6.225 23.9625C6.05625 23.5312 5.325 22.2 4.6875 21.8438C4.1625 21.5625 3.4125 20.8687 4.66875 20.85C5.85 20.8313 6.69375 21.9375 6.975 22.3875C8.325 24.6562 10.4812 24.0187 11.3438 23.625C11.475 22.65 11.8688 21.9937 12.3 21.6187C8.9625 21.2437 5.475 19.95 5.475 14.2125C5.475 12.5813 6.05625 11.2313 7.0125 10.1813C6.8625 9.80625 6.3375 8.26875 7.1625 6.20625C7.1625 6.20625 8.41875 5.8125 11.2875 7.74375C12.4875 7.40625 13.7625 7.2375 15.0375 7.2375C16.3125 7.2375 17.5875 7.40625 18.7875 7.74375C21.6562 5.79375 22.9125 6.20625 22.9125 6.20625C23.7375 8.26875 23.2125 9.80625 23.0625 10.1813C24.0188 11.2313 24.6 12.5625 24.6 14.2125C24.6 19.9688 21.0938 21.2437 17.7563 21.6187C18.3 22.0875 18.7688 22.9875 18.7688 24.3937C18.7688 26.4 18.75 28.0125 18.75 28.5188C18.75 28.9125 19.0312 29.3813 19.7812 29.2313C22.759 28.2259 25.3465 26.3121 27.1796 23.7592C29.0127 21.2063 29.9991 18.1429 30 15C30 6.7125 23.2875 0 15 0Z" fill="white"/>
+          </svg>
+        </a>
+        <a class="iconLink" href="https://www.linkedin.com/in/%EB%8B%A4%ED%98%84-%ED%95%9C-b7863b200/" onclick="onClickButton('LinkedIn')" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <g clip-path="url(#clip0_10_280)">
+            <path d="M15 0.600098C7.04698 0.600098 0.599976 7.0471 0.599976 15.0001C0.599976 22.9531 7.04698 29.4001 15 29.4001C22.953 29.4001 29.4 22.9531 29.4 15.0001C29.4 7.0471 22.953 0.600098 15 0.600098ZM11.475 20.9686H8.55898V11.5846H11.475V20.9686ZM9.99898 10.4326C9.07798 10.4326 8.48248 9.7801 8.48248 8.9731C8.48248 8.1496 9.09598 7.5166 10.0365 7.5166C10.977 7.5166 11.553 8.1496 11.571 8.9731C11.571 9.7801 10.977 10.4326 9.99898 10.4326ZM22.125 20.9686H19.209V15.7681C19.209 14.5576 18.786 13.7356 17.7315 13.7356C16.926 13.7356 16.4475 14.2921 16.236 14.8276C16.158 15.0181 16.1385 15.2881 16.1385 15.5566V20.9671H13.221V14.5771C13.221 13.4056 13.1835 12.4261 13.1445 11.5831H15.678L15.8115 12.8866H15.87C16.254 12.2746 17.1945 11.3716 18.768 11.3716C20.6865 11.3716 22.125 12.6571 22.125 15.4201V20.9686Z" fill="white"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_10_280">
+              <rect width="30" height="30" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg></a>
+
+        <a class="iconLink" href="https://velog.io/@kkily55/posts" onclick="onClickButton('Velog')" target="_blank">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 192 192" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
+	<path id="Website" fill="white" fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z"/>
+	        </svg>
+        </a>
+      </div>
+
+      
+
+  </div>
+
+  <div class="contactBtn">
     <a href="mailto:ekgus9701@gmail.com"><div>Contact</div></a>
   </div>
+
+  <script>
+    function onClickButton(type){
+      if(type==='Github'){
+        gtag("event","깃허브_버튼_클릭",{
+          "event_category": '깃허브_버튼_클릭',
+          'event_label':'깃허브_버튼_클릭'
+        })
+
+      }
+
+      else if(type==='LinkedIn'){
+        gtag("event","링크드인_버튼_클릭",{
+          "event_category": '링크드인_버튼_클릭',
+          'event_label':'링크드인_버튼_클릭'
+        })
+      }
+
+      else if(type==='Velog'){
+        gtag("event","벨로그_버튼_클릭",{
+          "event_category": '벨로그_버튼_클릭',
+          'event_label':'벨로그_버튼_클릭'
+        })
+      }
+    }
+    </script>
 
 </body>
 
