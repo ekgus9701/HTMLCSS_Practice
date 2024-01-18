@@ -35,10 +35,6 @@
   }
   
 
-  .navItem {
-  }
-  
-
   .iconLinkContainer{
     display: flex;
     margin: 30px 0;
@@ -326,12 +322,12 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.2s;
+    /* transition: opacity 0.2s; */
     border-radius: inherit;
   }
 
   .project:hover .explain{ 
-    background-color: rgba(204, 204, 196, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     opacity: 1; 
   }
 
@@ -345,7 +341,7 @@
   }
 
   .explain p{
-    color: 
+    color: gray;
   }
     
 
