@@ -294,10 +294,12 @@
    
   }
 
+
   .project{
    
     width:350px;
     height: 500px;
+    position: relative;
     flex-basis: 350px;  
     flex-grow: 0; 
     border-radius: 30px;
@@ -305,24 +307,32 @@
   }
 
   .projectPhoto{
-    width:350px;
-    height: 500px;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
     flex-basis: 350px;  
     flex-grow: 0; 
-    border-radius: 30px;
+    border-radius: inherit;
   }
 
   .explain{
-    position: absolute; 
-    opacity: 0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s;
+    border-radius: inherit;
 
   }
 
   .project:hover .explain{ 
-    background-color: rgba(204, 204, 196, 0.9);
+    background-color: rgba(204, 204, 196, 0.7);
     opacity: 1; 
   }
     
