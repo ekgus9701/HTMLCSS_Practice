@@ -19,10 +19,10 @@ header{
   nav{
     display: flex;
     height:60px;
-    padding: 0px 30px;
+    padding: 0px 24px;
     padding-bottom: 10px;
     align-items: center;
-    /* gap:30px; */
+    gap:30px;
     align-self: stretch;
     font-size: 20px;
     justify-content: center;
