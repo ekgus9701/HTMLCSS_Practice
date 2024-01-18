@@ -14,9 +14,9 @@
 
   .upper{
     display: flex;
-    max-width: 1350px;
+    
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 70px;
   }
 
   
@@ -34,10 +34,7 @@
     
   }
   
-  /* .navContainer{
-    display: flex;
-    justify-content: center;
-  } */
+
   .navItem {
   }
   
@@ -303,17 +300,43 @@
     height: 500px;
     flex-basis: 350px;  
     flex-grow: 0; 
-    background: rgb(182, 181, 181);
     border-radius: 30px;
     
   }
+
+  .projectPhoto{
+    width:350px;
+    height: 500px;
+    flex-basis: 350px;  
+    flex-grow: 0; 
+    border-radius: 30px;
+  }
+
+  .explain{
+    position: absolute; 
+    opacity: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .project:hover .explain{ 
+    background-color: rgba(204, 204, 196, 0.9);
+    opacity: 1; 
+  }
+    
 
   .lower nav{
     display: none;
   }
 
-  .lower ic
+  .lowerIconLinkContainer{
+    display:none;
+    
+  }
 
+ 
 
   
 
