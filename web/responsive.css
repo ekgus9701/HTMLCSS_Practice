@@ -178,6 +178,7 @@ header{
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
+  align-items: center;
    
  
 }
@@ -194,12 +195,22 @@ header{
 }
 
 .lowerIconLinkContainer{
-    padding-left: 30px;
+    
     display: flex;
-    margin-top: 30px;
+    align-items: center;
     flex-direction: row;
     gap: 30px;
     height: 100px;
     
+  }
+
+  .email{
+    color:white;
+    display:flex;
+    align-items: center;
+  }
+
+  .email a{
+    color:white;
   }
 

@@ -33,6 +33,11 @@
     color:white;
     
   }
+
+  .navItem a{
+    color:white;
+    text-decoration: none;
+  }
   
 
   .iconLinkContainer{
@@ -343,11 +348,17 @@
   .explain p{
     color: gray;
   }
+
+  .email{
+   display:none;
+  }
     
 
-  .lower nav{
-    display: none;
-  }
+.lower{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
   .lowerIconLinkContainer{
     display:none;
