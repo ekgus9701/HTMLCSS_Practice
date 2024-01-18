@@ -1,13 +1,5 @@
-/* @font-face {
-    font-family: "Cafe24Supermagic-Bold-v1.0";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
-      format("woff2");
-    font-weight: 700;
-    font-style: normal;
-  } */
-  
   body {
-    /* font-family: "Cafe24Supermagic-Bold-v1.0"; */
+    
     background-color: black;
     
   }
@@ -136,11 +128,7 @@
     }
 
   .aboutMeContainer {
-    background: black;/*linear-gradient(
-      96deg,
-      white 1.72%,
-      rgb(34, 34, 34) 158.93%
-    );*/
+    background: black;
     
   }
   .aboutMe {
@@ -157,7 +145,7 @@
   .aboutMe h2 {
     color: #000;
     font-size: 40px;
-    /* white-space: pre-line; */
+    
     font-style: normal;
     font-weight: 700;
     line-height: 125%; /* 50px */
@@ -177,9 +165,9 @@
     width: 120px;
     height: 120px;
     position: absolute;
-    /* top: 0px; */
+   
     bottom: 48px;
-    /* right: 0px; */
+    
     left: 165px;
   }
   
