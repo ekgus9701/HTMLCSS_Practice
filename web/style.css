@@ -334,6 +334,19 @@
     background-color: rgba(204, 204, 196, 0.7);
     opacity: 1; 
   }
+
+  .explain h1{
+    color: black;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    
+  }
+
+  .explain p{
+    color: 
+  }
     
 
   .lower nav{
